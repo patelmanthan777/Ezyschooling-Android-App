@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FinalIntegration</string>
+    <string name="title_activity_homepage">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="countrylabel">"Address : "</string>
+    <string name="populationlabel">"ezySchooling Rating : "</string>
+    <string name="ranklabel">"Name : "</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+</resources>

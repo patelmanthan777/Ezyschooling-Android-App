@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingRight="8dp"
+    android:background="#ecf0f0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/linearLayout6">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_weight="1">
+    <TextView
+        android:id="@+id/ranklabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ranklabel"
+        android:textColor="#182784"
+        android:textSize="17dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_schoolname1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ranklabel"
+        android:textColor="#060000"
+        android:textSize="15dp"
+
+        android:layout_marginLeft="2dp"
+        android:text="Ryan International School, rohini area delhi " />
+
+    <TextView
+        android:id="@+id/countrylabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_schoolname1"
+        android:text="Branch :"
+        android:textColor="#182784"
+        android:textSize="17dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_branch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/countrylabel"
+        android:textColor="#090000"
+        android:textSize="15dp"
+
+        android:text="Rohini"
+        android:layout_alignRight="@+id/textView_schoolname1"
+        android:layout_alignEnd="@+id/textView_schoolname1"
+        android:layout_alignLeft="@+id/textView_schoolname1"
+        android:layout_alignStart="@+id/textView_schoolname1" />
+
+    <TextView
+        android:id="@+id/populationlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_branch"
+        android:text="@string/populationlabel"
+        android:textColor="#182784"
+        android:textSize="17dp"
+
+        />
+
+
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar_listview_display"
+        android:numStars="5"
+
+        android:rating="3"
+
+        android:layout_below="@+id/populationlabel"
+        style="?android:attr/ratingBarStyleSmall"
+        />
+   </LinearLayout>
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/imageView_schoolicon"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentRight="true"
+
+        android:padding="1dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="5dp"
+android:background="@drawable/back"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_account_circle_black_24dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

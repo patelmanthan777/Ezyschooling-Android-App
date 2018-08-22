@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="#f8fbfc">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Child&apos;s Name :    "
+            android:id="@+id/textView_name"
+            android:textSize="17dp"
+            android:textColor="#060000"
+
+            android:layout_below="@+id/textView17"
+            android:autoText="false" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linerlayout1"
+            android:layout_below="@+id/textView_name">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_child_firstname"
+                android:hint="First Name"
+                android:textSize="16dp"
+                android:textColor="#0b0101"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background" />
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_child_lastname"
+                android:hint="Last Name"
+                android:textSize="16dp"
+                android:textColor="#090101"
+
+                android:layout_below="@+id/textView_name"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@android:drawable/editbox_background" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:text=" Gender :  "
+            android:id="@+id/textView2"
+            android:textSize="17dp"
+            android:textColor="#0c0101"
+            android:paddingTop="13dp"
+            android:layout_below="@+id/linerlayout1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:id="@+id/spinner_gender"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text=" D.O.B :"
+            android:id="@+id/textView3"
+            android:textSize="17dp"
+            android:textColor="#090101"
+            android:paddingTop="11dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linerlayout4"
+            android:layout_below="@+id/textView3">
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerdob"
+                android:layout_weight="1"
+                android:layout_marginLeft="3dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+            <Spinner
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerdob2"
+                android:layout_alignBottom="@+id/spinnerdob"
+                android:layout_toRightOf="@+id/spinnerdob"
+                android:layout_toEndOf="@+id/spinnerdob" />
+
+            <Spinner
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerdob3"
+                android:layout_alignBottom="@+id/spinnerdob2"
+                android:layout_toRightOf="@+id/spinnerdob2"
+                android:layout_toEndOf="@+id/spinnerdob2" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Email id :"
+            android:layout_below="@id/linerlayout4"
+            android:id="@+id/textview_bloodgrp"
+            android:textSize="17dp"
+            android:textColor="#090101"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Father&apos;s Name : "
+            android:id="@+id/textView4"
+            android:textSize="17dp"
+            android:textColor="#0f0202"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/textView13"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linerlayout2"
+            android:layout_below="@+id/textView4">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_father_firstname"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="First Name"
+                android:textSize="16dp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_father_lastname"
+                android:hint="Last Name"
+
+                android:layout_alignTop="@+id/editText_father_firstname"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Mother&apos;s Name : "
+            android:id="@+id/textView5"
+            android:textSize="17dp"
+            android:textColor="#0e0202"
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/textView12"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linerlayout3"
+            android:layout_below="@+id/textView5">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_mother_firstname"
+                android:layout_weight="1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="First Name"
+                android:textSize="16dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#0e0101"
+                android:background="@android:drawable/editbox_background" />
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_mother_lastname"
+                android:layout_below="@+id/textView5"
+                android:layout_alignParentRight="true"
+                android:hint="Last Name"
+                android:textSize="16dp"
+                android:textColor="#120202"
+                android:background="@android:drawable/editbox_background" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text=" Address :"
+            android:id="@+id/textView6"
+            android:textSize="17dp"
+            android:textColor="#0e0202"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/textView11"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_address"
+            android:layout_below="@+id/textView6"
+
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"
+            android:textColor="#120202"
+            android:background="@android:drawable/editbox_background" />
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:text="Save And Proceed"
+            android:id="@+id/button_proceedfrom_cafform"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:textColor="#f8fbfb"
+            android:background="@drawable/buttonbackground"
+            android:layout_below="@+id/textView16"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="openchildphoto"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text=" Qualification :"
+            android:id="@+id/textView51"
+            android:layout_below="@+id/linerlayout2"
+            android:textSize="17dp"
+            android:textColor="#0a0000"
+            android:paddingTop="7dp"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_father_qualification"
+            android:layout_below="@+id/linerlayout2"
+            android:layout_toRightOf="@+id/textView51"
+            android:layout_alignRight="@+id/spinner_gender"
+            android:layout_alignEnd="@+id/spinner_gender"
+            android:textIsSelectable="false"
+            android:textSize="16dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text=" Occupation :"
+            android:paddingTop="7dp"
+            android:id="@+id/textView52"
+            android:layout_below="@+id/editText_father_qualification"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/textView51"
+            android:layout_alignEnd="@+id/textView51"
+            android:textSize="17dp"
+            android:textColor="#060000" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_father_occuaption"
+            android:layout_alignBottom="@+id/textView52"
+            android:layout_alignRight="@+id/spinner_gender"
+            android:layout_alignEnd="@+id/spinner_gender"
+            android:layout_alignLeft="@+id/editText_father_qualification"
+            android:layout_alignStart="@+id/editText_father_qualification"
+            android:textSize="16dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text=" Qualification :"
+            android:id="@+id/textView53"
+            android:layout_below="@+id/linerlayout3"
+            android:textColor="#070000"
+            android:textSize="17dp"
+            android:paddingTop="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/textView52"
+            android:layout_alignEnd="@+id/textView52" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_mother_qualification"
+            android:layout_alignBottom="@+id/textView53"
+            android:layout_alignLeft="@+id/editText_father_occuaption"
+            android:layout_alignStart="@+id/editText_father_occuaption"
+            android:background="@android:drawable/editbox_background"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text=" Occupation :"
+            android:id="@+id/textView54"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/textView53"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="17dp"
+            android:textColor="#000000"
+            android:paddingTop="5dp"
+            android:layout_alignRight="@+id/textView53"
+            android:layout_alignEnd="@+id/textView53" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_mother_occupation"
+            android:layout_alignBottom="@+id/textView54"
+            android:layout_alignLeft="@+id/editText_mother_qualification"
+            android:layout_alignStart="@+id/editText_mother_qualification"
+            android:background="@android:drawable/editbox_background"
+            android:textSize="16dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/editText_bloodgrp"
+            android:textColor="#0b0101"
+            android:textSize="16dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_alignTop="@+id/textview_bloodgrp"
+            android:layout_alignRight="@+id/linerlayout4"
+            android:layout_alignEnd="@+id/linerlayout4"
+            android:layout_alignLeft="@+id/spinner_gender"
+            android:layout_alignStart="@+id/spinner_gender" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text=" Phone no:"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/textView9"
+            android:layout_below="@+id/textView52"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="17dp"
+            android:textColor="#040000"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_father_officeaddress"
+            android:layout_below="@+id/textView52"
+            android:layout_toEndOf="@+id/textView9"
+            android:layout_toRightOf="@+id/textView9"
+            android:textColor="#0b0101"
+            android:textSize="16dp"
+            android:inputType="number"
+            android:background="@android:drawable/editbox_background"
+            android:layout_alignLeft="@+id/editText_catagory"
+            android:layout_alignStart="@+id/editText_catagory" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=" Phone no:"
+            android:id="@+id/textView10"
+            android:layout_below="@+id/textview_bloodgrp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="17dp"
+            android:textColor="#040000"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/editText_disability"
+            android:textColor="#0b0101"
+            android:textSize="16dp"
+            android:inputType="number"
+            android:background="@android:drawable/editbox_background"
+            android:layout_alignTop="@+id/textView10"
+            android:layout_alignRight="@+id/editText_bloodgrp"
+            android:layout_alignEnd="@+id/editText_bloodgrp"
+            android:layout_toEndOf="@+id/textview_bloodgrp"
+            android:layout_toRightOf="@+id/textview_bloodgrp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=" Catagory :"
+            android:id="@+id/textView11"
+            android:layout_below="@+id/textView10"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="17dp"
+            android:textColor="#040000"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/editText_catagory"
+
+            android:textColor="#0b0101"
+            android:textSize="16dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_alignTop="@+id/textView11"
+            android:layout_alignRight="@+id/editText_disability"
+            android:layout_alignEnd="@+id/editText_disability"
+            android:layout_toRightOf="@+id/textview_bloodgrp"
+            android:layout_toEndOf="@+id/textview_bloodgrp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=" Annual Income :"
+            android:id="@+id/textView14"
+            android:layout_below="@+id/textView9"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="17dp"
+            android:textColor="#040000"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_father_annualincome"
+            android:textColor="#0b0101"
+            android:textSize="16dp"
+            android:inputType="number"
+            android:background="@android:drawable/editbox_background"
+            android:layout_alignBottom="@+id/textView14"
+            android:layout_toRightOf="@+id/textView14"
+            android:layout_toEndOf="@+id/textView14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=" phone no :"
+            android:id="@+id/textView15"
+            android:layout_below="@+id/textView54"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="17dp"
+            android:textColor="#040000"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_mother_officeaddress"
+            android:layout_below="@+id/editText_mother_occupation"
+            android:layout_toRightOf="@+id/textView15"
+            android:layout_toEndOf="@+id/textView15"
+            android:textColor="#0b0101"
+            android:textSize="16dp"
+            android:layout_marginLeft="7dp"
+            android:inputType="number"
+            android:background="@android:drawable/editbox_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=" Annual Income :"
+            android:id="@+id/textView16"
+            android:layout_below="@+id/editText_mother_officeaddress"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="17dp"
+            android:textColor="#040000"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="30dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_mother_annualincome"
+            android:layout_below="@+id/editText_mother_officeaddress"
+            android:textColor="#0b0101"
+            android:textSize="16dp"
+            android:inputType="number"
+            android:background="@android:drawable/editbox_background"
+            android:layout_toRightOf="@+id/textView4"
+            android:layout_toEndOf="@+id/textView4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:text="New Text"
+            android:id="@+id/textView12"
+            android:background="#050000"
+            android:layout_below="@+id/textView14"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="23dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:text="New Text"
+            android:id="@+id/textView13"
+            android:layout_marginTop="47dp"
+            android:background="#060000"
+            android:layout_below="@+id/editText_address" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Common Admission Form"
+            android:id="@+id/textView17"
+            android:textColor="#000206"
+            android:textSize="22dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dts.finalintegration">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoapp"
+        android:label="EzySchooling"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Signup" />
+        <activity
+            android:name=".Homepage"
+            android:label="@string/title_activity_homepage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SchoolBrowse1" />
+        <activity android:name=".Sortby" />
+        <activity android:name=".Filter_class" />
+        <activity android:name=".Filter_Region" />
+        <activity android:name=".Filter_fees_structure" />
+        <activity android:name=".Filter_ac_nonac" />
+        <activity android:name=".Filter_sports" />
+        <activity android:name=".Filter_CATEgory_new" />
+        <activity android:name=".Filter_type_" />
+        <activity android:name=".Filter_transport_facility" />
+        <activity android:name=".Filter_StudentsPerClass" />
+        <activity android:name=".Filter_subjects_in11th" />
+        <activity android:name=".Filter_foreign_languages" />
+        <activity android:name=".Filter_accomodation" />
+        <activity android:name=".CAF" />
+        <activity android:name=".Childphoto" />
+        <activity android:name=".DOBphoto" />
+        <activity android:name=".Fatherphoto" />
+        <activity android:name=".Motherphoto" />
+        <activity android:name=".SchoolBrowse2" />
+        <activity android:name=".ShoppingCartActivity" />
+        <activity android:name=".SingleSchool2" />
+        <activity android:name=".GalleryActivity" />
+        <activity android:name=".Settings" />
+        <activity android:name=".OurTeam" />
+        <activity android:name=".AfterSignUp" />
+        <activity android:name=".CAF_part3"></activity>
+    </application>
+
+</manifest>

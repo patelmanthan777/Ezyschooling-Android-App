@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Common Admission Form"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Child's Details :"
+        android:id="@+id/textView7"
+        android:textSize="18dp"
+        android:textColor="#0c0101"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/editText_address"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:theme="@style/TextLabel1"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/editText_child_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginLeft="7dp"
+
+                android:hint="First Name"
+
+                android:editable="true"
+                android:textColor="#030000"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:theme="@style/TextLabel1"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/editText_child_lastname"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Last Name"
+
+
+                android:layout_marginRight="7dp"
+
+                android:editable="true"
+                android:textColor="#030000"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:theme="@style/TextLabel1"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/editText_bloodgrp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress|text"
+            android:layout_marginLeft="7dp"
+android:background="@android:drawable/editbox_background"
+            android:hint="Email Address"
+
+            android:editable="true"
+            android:textColor="#030000"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:theme="@style/TextLabel1"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/editText_disability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number|text"
+            android:layout_marginLeft="7dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Phone Number"
+
+            android:editable="true"
+            android:textColor="#030000"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:theme="@style/TextLabel1"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/editText_catagory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginLeft="7dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Category (general/sc/st/obc)"
+
+            android:editable="true"
+            android:textColor="#030000"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:theme="@style/TextLabel1"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/editText_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginLeft="7dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Address"
+
+            android:editable="true"
+            android:textColor="#030000"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Gender :  "
+        android:id="@+id/textView2"
+        android:textSize="17dp"
+        android:textColor="#0c0101"
+        android:paddingTop="13dp"
+        android:layout_below="@+id/linerlayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="3dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_gender"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginBottom="8dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Religion :  "
+        android:id="@+id/textView2relgn"
+        android:textSize="17dp"
+        android:textColor="#0c0101"
+        android:paddingTop="13dp"
+        android:layout_below="@+id/spinner_gender"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="3dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_religion"
+        android:layout_alignBottom="@+id/textView2relgn"
+        android:layout_toRightOf="@+id/textView2relgn"
+        android:layout_toEndOf="@+id/textView2relgn"
+        android:layout_marginBottom="8dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" D.O.B :"
+        android:id="@+id/textView3"
+        android:textSize="17dp"
+        android:textColor="#090101"
+        android:paddingTop="11dp"
+        android:layout_below="@+id/spinner_religion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="3dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linerlayout4"
+        android:layout_below="@+id/textView3"
+        android:layout_marginBottom="8dp">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerdob"
+            android:layout_weight="1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+        <Spinner
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerdob2"
+            android:layout_alignBottom="@+id/spinnerdob"
+            android:layout_toRightOf="@+id/spinnerdob"
+            android:layout_toEndOf="@+id/spinnerdob" />
+
+        <Spinner
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerdob3"
+            android:layout_alignBottom="@+id/spinnerdob2"
+            android:layout_toRightOf="@+id/spinnerdob2"
+            android:layout_toEndOf="@+id/spinnerdob2" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Single Child ?"
+
+        android:textSize="17dp"
+        android:textColor="#090101"
+        android:paddingTop="11dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/radiogroup_singlechild"
+        android:layout_marginTop="5dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:id="@+id/radioButton_singlechild_yes"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:id="@+id/radioButton_singlechild_no"
+            android:checked="false" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Single Parent?"
+
+        android:textSize="17dp"
+        android:textColor="#090101"
+        android:paddingTop="11dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/radiogroup_singleparent"
+        android:layout_marginTop="5dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:id="@+id/radioButton_singleparent_yes"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:id="@+id/radioButton_singleparent_no"
+            android:checked="false" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Parent?"
+
+        android:textSize="17dp"
+        android:textColor="#090101"
+        android:paddingTop="11dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/radiogroup_guardian"
+        android:layout_marginTop="5dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:id="@+id/radioButton_guardian_yes"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:id="@+id/radioButton_guardian_no"
+            android:checked="false" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearlayout_guardian">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:text="New Text"
+            android:id="@+id/textView13123"
+            android:layout_marginTop="47dp"
+            android:background="#060000"
+            android:layout_below="@+id/textView7" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardian Details :"
+            android:id="@+id/textView734123"
+            android:textSize="18dp"
+            android:textColor="#0c0101"
+            android:paddingTop="13dp"
+            android:layout_below="@+id/editText_address"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="3dp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:theme="@style/TextLabel1"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/editText_guardian_firstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_marginLeft="7dp"
+
+                    android:hint="Name"
+
+                    android:editable="true"
+                    android:textColor="#030000"
+                    android:textSize="16dp" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:theme="@style/TextLabel1"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/editText_guardian_qualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginLeft="7dp"
+                android:background="@android:drawable/editbox_background"
+                android:hint="Qualificaton "
+
+                android:editable="true"
+                android:textColor="#030000"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:theme="@style/TextLabel1"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/editText_guardian_occuaption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginLeft="7dp"
+                android:background="@android:drawable/editbox_background"
+                android:hint="Occupation "
+
+                android:editable="true"
+                android:textColor="#030000"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:theme="@style/TextLabel1"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/editText_guardian_officeaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_marginLeft="7dp"
+                android:background="@android:drawable/editbox_background"
+                android:hint="Mobile Number"
+
+                android:editable="true"
+                android:textColor="#030000"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:theme="@style/TextLabel1"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/editText_guardian_annualincome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_marginLeft="7dp"
+                android:background="@android:drawable/editbox_background"
+                android:hint="Annual Income"
+
+                android:editable="true"
+                android:textColor="#030000"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:theme="@style/TextLabel1"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/editText_guardian_officeadd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginLeft="7dp"
+                android:background="@android:drawable/editbox_background"
+                android:hint="Office Address "
+
+                android:editable="true"
+                android:textColor="#030000"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:theme="@style/TextLabel1"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/editText_guardian_officephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginLeft="7dp"
+                android:background="@android:drawable/editbox_background"
+                android:hint="Office Phone Number "
+
+                android:editable="true"
+                android:textColor="#030000"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:text="New Text"
+        android:id="@+id/textView1453"
+        android:layout_marginTop="47dp"
+        android:background="#060000"
+        android:layout_below="@+id/textView7" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Father Details :"
+        android:id="@+id/textView21127"
+        android:textSize="18dp"
+        android:textColor="#0c0101"
+        android:paddingTop="13dp"
+        android:layout_below="@+id/editText_address"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="3dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:theme="@style/TextLabel1"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/editText_father_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginLeft="7dp"
+
+                android:hint="Name"
+
+                android:editable="true"
+                android:textColor="#030000"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:theme="@style/TextLabel1"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/editText_father_qualification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginLeft="7dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Qualificaton "
+
+            android:editable="true"
+            android:textColor="#030000"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:theme="@style/TextLabel1"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/editText_father_occuaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginLeft="7dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Occupation "
+
+            android:editable="true"
+            android:textColor="#030000"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:theme="@style/TextLabel1"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/editText_father_officeaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginLeft="7dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Mobile Number"
+
+            android:editable="true"
+            android:textColor="#030000"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:theme="@style/TextLabel1"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/editText_father_annualincome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginLeft="7dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Annual Income"
+
+            android:editable="true"
+            android:textColor="#030000"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+
+        android:theme="@style/TextLabel1"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/editText_father_officeadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginLeft="7dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Office Address "
+
+            android:editable="true"
+            android:textColor="#030000"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+
+        android:theme="@style/TextLabel1"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/editText_father_officephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginLeft="7dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Office Phone Number "
+
+            android:editable="true"
+            android:textColor="#030000"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:text="New Text"
+        android:id="@+id/textView13"
+        android:layout_marginTop="47dp"
+        android:background="#060000"
+        android:layout_below="@+id/textView7" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mother Details :"
+        android:id="@+id/textView734"
+        android:textSize="18dp"
+        android:textColor="#0c0101"
+        android:paddingTop="13dp"
+        android:layout_below="@+id/editText_address"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="3dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:theme="@style/TextLabel1"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/editText_mother_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginLeft="7dp"
+
+                android:hint="Name"
+
+                android:editable="true"
+                android:textColor="#030000"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:theme="@style/TextLabel1"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/editText_mother_qualification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginLeft="7dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Qualificaton "
+
+            android:editable="true"
+            android:textColor="#030000"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:theme="@style/TextLabel1"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/editText_mother_occupation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginLeft="7dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Occupation "
+
+            android:editable="true"
+            android:textColor="#030000"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:theme="@style/TextLabel1"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/editText_mother_officeaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginLeft="7dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Mobile Number"
+
+            android:editable="true"
+            android:textColor="#030000"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:theme="@style/TextLabel1"
+        android:layout_marginBottom="8dp">
+        <EditText
+
+            android:id="@+id/editText_mother_annualincome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginLeft="7dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Annual Income"
+
+            android:editable="true"
+            android:textColor="#030000"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+
+        android:theme="@style/TextLabel1"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/editText_mother_officeadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginLeft="7dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Office Address "
+
+            android:editable="true"
+            android:textColor="#030000"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+
+        android:theme="@style/TextLabel1"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/editText_mother_officephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginLeft="7dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Office Phone Number "
+
+            android:editable="true"
+            android:textColor="#030000"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:text="Save And Proceed"
+        android:id="@+id/button_proceedfrom_cafform"
+        android:textSize="20dp"
+        android:inputType="text"
+        android:textColor="#f8fbfb"
+        android:background="@drawable/buttonbackground"
+       android:layout_marginTop="15dp"
+        android:onClick="openchildphoto"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="15dp"/>
+</LinearLayout>
+</ScrollView>

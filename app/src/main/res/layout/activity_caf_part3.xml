@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "Additonal Information"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="25dp"
+            android:textColor="#060000"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_itemsall"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#4282d7"
+            android:layout_below="@+id/textView2"
+            android:background="@android:drawable/alert_light_frame" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No. of Schools Selected are :"
+            android:id="@+id/textView_noofschools"
+            android:layout_below="@+id/textView_itemsall"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="18dp"
+            android:textColor="#0b0000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sibling in any of the above selected schools? (only real brother/sister)"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/textView_noofschools"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#f16262"
+            android:textSize="18dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/radioGroup_sibling"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:id="@+id/sibling_yes"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/Sibling_NO"
+                android:checked="false" />
+        </RadioGroup>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Linerarlooo"
+            android:layout_below="@+id/radioGroup_sibling"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="No. of siblings?"
+                android:id="@+id/textView_howmany"
+                android:textSize="18dp"
+                android:textColor="#f16262"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup_no_of_siblings"
+                android:layout_marginTop="26dp"
+                android:layout_below="@+id/textView_howmany"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:id="@+id/radioButton_1"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:id="@+id/radioButton_2"
+                    android:checked="false" />
+            </RadioGroup>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/Linerarlooo"
+            android:id="@+id/linearlayout_sibling1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please enter the following details of the sibling :"
+                android:id="@+id/textView4_description"
+                android:textColor="#63ad2d"
+                android:textSize="18dp"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=" Sibling 1"
+                android:id="@+id/textView4_sibling1"
+                android:layout_marginTop="22dp"
+                android:textColor="#0a0101"
+                android:textSize="20dp"
+                android:layout_below="@+id/radioGroup_no_of_siblings"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@android:drawable/alert_light_frame" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Name :"
+                android:id="@+id/textView5_name_sibing"
+                android:textColor="#0a0101"
+                android:textSize="17dp"
+                android:layout_below="@+id/textView4_description"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@android:drawable/alert_light_frame" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_name_sibling"
+                android:layout_below="@+id/textView5_name_sibing"
+                android:layout_marginBottom="7dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Class and section :"
+                android:id="@+id/textView6_class_siblling"
+                android:layout_below="@+id/editText_name_sibling"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#0a0101"
+                android:textSize="18dp"
+                android:background="@android:drawable/alert_light_frame" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_class_sibling"
+                android:layout_below="@+id/textView6_class_siblling"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="19dp"
+                android:textColor="#0c0000"
+                android:layout_marginBottom="7dp"
+                android:background="@android:drawable/editbox_background" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" School Name :"
+                android:id="@+id/textView_schoolname_sib1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="18dp"
+                android:textColor="#0f0101"
+                android:layout_marginTop="8dp"
+                android:background="@android:drawable/alert_light_frame"
+                android:layout_below="@+id/editText_class_sibling" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_schoolname_sibling1"
+                android:layout_below="@+id/textView_schoolname_sib1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="3dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/linearlayout_sibling1"
+            android:id="@+id/linearlayout_sibling2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=" Sibling 2"
+                android:id="@+id/textView5_sibling2"
+                android:textColor="#0a0101"
+                android:textSize="20dp"
+                android:layout_marginTop="53dp"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@android:drawable/alert_light_frame" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please enter the following details of the sibling :"
+                android:id="@+id/textView_sibling2_description"
+                android:layout_below="@+id/textView5_sibling2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#63ad2d"
+                android:textSize="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Name :"
+                android:id="@+id/textView_sib2_name"
+                android:textColor="#0a0101"
+                android:textSize="18dp"
+                android:layout_below="@+id/textView_sibling2_description"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@android:drawable/alert_light_frame" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_sib2_name"
+                android:layout_below="@+id/textView_sib2_name"
+                android:textSize="19dp"
+                android:textColor="#090101"
+                android:layout_marginBottom="7dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Class and section :"
+                android:id="@+id/textView_sib2_class"
+                android:layout_below="@+id/editText_sib2_name"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#0a0101"
+                android:textSize="18dp"
+                android:background="@android:drawable/alert_light_frame" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_sib2_class"
+                android:layout_below="@+id/textView_sib2_class"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="19dp"
+                android:textColor="#0b0101"
+                android:layout_marginBottom="7dp"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" School Name :"
+                android:id="@+id/textView_schoolname_sib2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="18dp"
+                android:textColor="#0f0101"
+                android:layout_marginTop="8dp"
+                android:background="@android:drawable/alert_light_frame"
+                android:layout_below="@+id/editText_sib2_class" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_schoolname_sib2"
+                android:layout_below="@+id/textView_schoolname_sib2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="3dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parent Alumni in any of the above selected schools? "
+            android:id="@+id/textView_alumini_question"
+            android:layout_marginTop="30dp"
+            android:textColor="#f16262"
+            android:textSize="19dp"
+            android:layout_below="@+id/linearlayout_sibling2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="8dp"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_alumini_question"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/radioGroup_alumini_yesno"
+            android:layout_marginBottom="10dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:id="@+id/radioButton_alumini_yes"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/radioButton_alumini_no"
+                android:checked="false" />
+        </RadioGroup>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/aluminiwhole"
+            android:layout_below="@+id/radioGroup_alumini_yesno"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Which alumni?"
+                android:id="@+id/textView_alumini_number"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#f16262"
+                android:textSize="18dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_alumini_number"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/radioGroup_alumini_number"
+                android:layout_marginBottom="8dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Father"
+                    android:id="@+id/radioButton_alumini_1"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mother"
+                    android:id="@+id/radioButton_alumini_2"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Both"
+                    android:id="@+id/radioButton_alumini_3"
+                    android:checked="false" />
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alumiini1"
+                android:orientation="vertical"
+                android:layout_below="@+id/radioGroup_alumini_number"
+                android:layout_marginBottom="12dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Father"
+                    android:id="@+id/textView6"
+                    android:layout_marginBottom="6dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#0a0101"
+                    android:textSize="20dp"
+                    android:background="@android:drawable/alert_light_frame" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Year Of Pass Out :"
+                    android:id="@+id/textView_yearofpassout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#0c0101"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_below="@+id/textView6"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_year_father"
+                    android:layout_below="@+id/textView11"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="6dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="School Name :"
+                    android:id="@+id/textView11"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#0c0101"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_below="@+id/textView6"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_schoolnames_alumini1"
+                    android:layout_below="@+id/textView11"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="6dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alumini2"
+                android:orientation="vertical"
+                android:layout_below="@+id/alumiini1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Mother"
+                    android:id="@+id/textView6ffff"
+                    android:layout_marginBottom="6dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#0a0101"
+                    android:textSize="20dp"
+                    android:background="@android:drawable/alert_light_frame" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Year Of Pass Out :"
+                    android:id="@+id/textView_yearofpassout_m"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#0c0101"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="3dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_year_mother"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="6dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="School Name :"
+                    android:id="@+id/textView11ffff"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#0c0101"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_below="@+id/textView6ffff"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_alumini2_schoolnames"
+                    android:layout_below="@+id/textView11ffff"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="6dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Proceed For Payment"
+            android:id="@+id/button_proceed_from_sibalumini"
+            android:background="@drawable/buttonbackground"
+            android:textSize="20dp"
+            android:layout_marginTop="57dp"
+            android:layout_below="@+id/checkBox_declaration"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aluminiwhole"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/relativeLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Is Transportation required?"
+                android:id="@+id/textView4"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#ef1313"
+                android:textSize="22dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/radiogroup_transport"
+                android:layout_marginTop="5dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:id="@+id/radioButton_transport_yes"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/radioButton_transport_no"
+                    android:checked="false" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I hereby declare that all the information provided by me for my child is true and if any discrepancy is found in the information filled the form is liable to be rejected. "
+            android:id="@+id/checkBox_declaration"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="39dp"
+            android:checked="false"
+            android:layout_below="@+id/relativeLayout" />
+
+    </RelativeLayout>
+</ScrollView>

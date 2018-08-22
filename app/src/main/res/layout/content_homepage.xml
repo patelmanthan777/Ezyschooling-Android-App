@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+android:layout_marginTop="50dp"
+            android:background="#4655b6"
+            android:id="@+id/linearLayout2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="What we offer"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:id="@+id/textView4"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="190dp"
+                    android:layout_height="85dp"
+                    android:id="@+id/imageView2_opencaf"
+                    android:layout_weight="1"
+                    android:src="@drawable/schoolcompare"
+                    android:scaleType="fitXY"
+
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EZY ADMISSION"
+                        android:id="@+id/textView5"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The one stop platform for browsing and seeking admission in schools."
+                        android:id="@+id/textView6"
+                        android:textColor="#ffffff"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/linre2">
+
+                <ImageView
+                    android:layout_width="190dp"
+                    android:layout_height="85dp"
+                    android:id="@+id/imageView3"
+                    android:layout_weight="1"
+                    android:src="@drawable/ezypay"
+                    android:scaleType="fitXY"
+
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#182784" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" EZY PAYMENT"
+                        android:id="@+id/textView7"
+                        android:textSize="15dp"
+                        android:textColor="#ffffff"
+                        android:layout_marginBottom="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trouble in going to school just for fee payment? Relax, all we need is your ten minutes."
+                        android:id="@+id/textView8"
+                        android:textColor="#ffffff"
+                        android:textSize="13dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="18dp">
+
+                <ImageView
+                    android:layout_width="190dp"
+                    android:layout_height="85dp"
+                    android:id="@+id/imageView4"
+                    android:layout_weight="1"
+                    android:src="@drawable/ezyteacher2"
+                    android:scaleType="fitXY"
+
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EZY RECRUITMENT"
+                        android:id="@+id/textView9"
+                        android:textSize="15dp"
+                        android:textColor="#ffffff"
+                        android:layout_marginBottom="7dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The one of its kind portal for job seekers and recruiters in schools."
+                        android:id="@+id/textView10"
+                        android:textSize="13dp"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/linearLayout2"
+
+            android:id="@+id/linearLayout3"
+
+            android:background="#ffffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="EZY ADMISSION"
+                android:id="@+id/textView2"
+                android:textStyle="bold"
+android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Choose from various schools, based upon various factors. Next, fill our Common admission form once for all.that&apos;s it."
+                    android:layout_weight="1"
+                    android:id="@+id/textView3"
+                    android:textColor="#1d1c1c"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/imageView"
+                    android:layout_weight="1"
+                    android:src="@drawable/ezyadmsn"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/back"
+                    android:padding="1dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Try It Out!"
+                android:id="@+id/button_opencaf"
+                android:background="@drawable/back2"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textColor="#182784"
+                android:layout_marginTop="22dp"
+android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/linearLayout3"
+
+            android:id="@+id/linearLayout31"
+            android:background="#4655b6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="EZY PAYMENT"
+                android:id="@+id/textView21"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout1"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select your kid&apos;s school, preferred mode of payment and all your fee payment woes are over!"
+                    android:layout_weight="1"
+                    android:id="@+id/textView31"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:id="@+id/imageView1"
+                    android:layout_weight="1"
+                    android:src="@drawable/payment1"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/back"
+                    android:padding="1dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="6dp"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Coming Soon!"
+                android:id="@+id/button1"
+                android:background="@drawable/back3"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="22dp"
+android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/linearLayout31"
+
+            android:id="@+id/linearLayout32"
+            android:background="#ffffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="EZY RECRUITMENT"
+                android:id="@+id/textView22"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout22"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Make your profile, choose from the list of job profile that interests you and there you are ready for your interview."
+                    android:layout_weight="1"
+                    android:id="@+id/textView32"
+                    android:textColor="#1d1c1c"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:id="@+id/imageView22"
+                    android:layout_weight="1"
+                    android:src="@drawable/recruitment"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/back"
+                    android:padding="1dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Coming Soon!"
+                android:id="@+id/button2"
+                android:background="@drawable/back2"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textColor="#182784"
+                android:layout_marginTop="22dp"
+android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout32"
+            android:layout_centerHorizontal="true"
+
+            android:background="#4655b6"
+            android:id="@+id/linearLayout4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Why Choose Us?"
+                android:textStyle="bold"
+                android:id="@+id/textView19"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EZY ADMISSION:"
+                android:textStyle="bold"
+                android:id="@+id/textView20"
+                android:textSize="14dp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-> Less rush during admission time."
+                android:id="@+id/textView23"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-> Cost Free and verified listing of schools."
+                android:id="@+id/textView24"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-> Admit deserving students."
+                android:id="@+id/textView25"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EZY PAYMENT:"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+
+                android:id="@+id/textView26"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-> Solve problems regarding fee collection."
+                android:id="@+id/textView27"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-> Collect both yearly and monthly fees."
+                android:id="@+id/textView28"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EZY RECRUITEMENT:"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/textView29"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="-> Verified teachers for recruitment."
+                android:id="@+id/textView30"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="-> No more advertisements for teacher recruitment."
+                android:id="@+id/textView33"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:layout_below="@+id/linearLayout4"
+            android:layout_centerHorizontal="true"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Follow us on:"
+                android:textStyle="bold"
+                android:id="@+id/textView34"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#080000"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/imageView_facebook"
+                    android:layout_weight="1"
+                    android:src="@drawable/fbicon"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/imageView_instagram"
+                    android:layout_weight="1"
+                    android:src="@drawable/instagramicon"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/imageView_tr"
+                    android:layout_weight="1"
+                    android:src="@drawable/twittericon"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/imageView_ln"
+                    android:layout_weight="1"
+                    android:src="@drawable/linkedicon"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    ezyschooling@gmail.com"
+                android:id="@+id/textView35"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000109"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

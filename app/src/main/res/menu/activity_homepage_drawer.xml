@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="EzyAdmission">
+        <menu>
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_format_list_numbered_black_24dp"
+            android:title="Commom Admission Form" />
+        <item
+            android:id="@+id/nav_schoolbrowse"
+            android:icon="@drawable/ic_youtube_searched_for_black_24dp"
+            android:title="Browse And Save Schools" />
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="My Schools" />
+        </menu>
+        </item>
+
+
+    <item android:title="Coming Soon">
+        <menu>
+            <item
+                android:id="@+id/nav_gallery"
+                android:icon="@drawable/ic_person_add_black_24dp"
+                android:title="EzyRecruitment" />
+            <item
+                android:id="@+id/nav_slideshow"
+                android:icon="@drawable/ic_local_atm_black_24dp"
+                android:title="EzyPayment" />
+        </menu>
+    </item>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_perm_phone_msg_black_24dp"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/nav_manage"
+                android:icon="@drawable/ic_group_black_24dp"
+                android:title="Our Team" />
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_vpn_key_black_24dp"
+        android:title="Logout" />
+</menu>

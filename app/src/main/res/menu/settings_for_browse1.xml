@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_build_black_24dp"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="100"
+        android:title="Refresh"
+        android:icon="@drawable/refresh_icon"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="@string/action_logout"
+        android:icon="@drawable/ic_vpn_key_black_24dp"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_homepage"
+        android:orderInCategory="100"
+        android:title="Home"
+        android:icon="@drawable/homeicon"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_myschools"
+        android:orderInCategory="100"
+        android:title="MySchools"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_caf"
+        android:orderInCategory="100"
+        android:title="Common Admission Form"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_formout"
+        android:orderInCategory="100"
+        android:title="Form"
+        android:icon="@drawable/caf"
+        app:showAsAction="always" />
+</menu>

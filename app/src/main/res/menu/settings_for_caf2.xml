@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_build_black_24dp"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_login"
+        android:orderInCategory="100"
+        android:title="Login"
+        android:icon="@drawable/ic_vpn_key_black_24dp"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_homepage"
+        android:orderInCategory="100"
+        android:title="Home"
+        android:icon="@drawable/homeicon"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_myschools"
+        android:orderInCategory="100"
+        android:title="MySchools"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_browse"
+        android:orderInCategory="100"
+        android:title="Browse Schools"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_homeout"
+        android:orderInCategory="100"
+        android:title="Home"
+        android:icon="@drawable/homeicon"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_browseout"
+        android:orderInCategory="100"
+        android:title="Browse"
+        android:icon="@drawable/browse"
+        app:showAsAction="always" />
+</menu>
